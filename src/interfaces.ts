@@ -1,3 +1,5 @@
+import { Server } from "http";
+
 export interface WsMessage<T = unknown> {
     type: string;
     data: T;
@@ -14,4 +16,6 @@ export interface WsMessage<T = unknown> {
     handleMessage: (msg: WsMessage, ctx: WsContext) => void;
     handleClose: (ctx: WsContext) => void;
   }
+
+
   

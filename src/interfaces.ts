@@ -17,5 +17,9 @@ export interface WsMessage<T = unknown> {
     handleClose: (ctx: WsContext) => void;
   }
 
+  export interface Data {
+    id: number;
+  }
+
 
   
